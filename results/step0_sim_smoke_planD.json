@@ -1,0 +1,104 @@
+{
+  "config": {
+    "families": [
+      "poisson",
+      "renewal",
+      "hawkes",
+      "lrd"
+    ],
+    "n_events": 10000,
+    "n_sources": 64,
+    "lambda_s": 0.05,
+    "seed": 0,
+    "capacity": null,
+    "out": "results\\step0_sim_smoke_planD.json"
+  },
+  "rows": [
+    {
+      "family": "poisson",
+      "params": {},
+      "rate_measured": 0.050063652146437515,
+      "rate_target": 0.05,
+      "cv": 0.9978442703672052,
+      "n_streams": 64,
+      "n_events_per_stream": 10000,
+      "n_messages": 1012082,
+      "n_dropped": 0,
+      "drop_pct": 0.0,
+      "p50_delay": 13.72373192919622,
+      "p95_delay": 35.705349497903605,
+      "mean_wait": 3.092909405728337,
+      "total_hops": 3484922,
+      "peak_occ": 11,
+      "port_capacity": 1024,
+      "gen_build_s": 36.4570676000003,
+      "sim_s": 17.09820619999664
+    },
+    {
+      "family": "renewal",
+      "params": {
+        "shape": 0.5
+      },
+      "rate_measured": 0.050240435452089144,
+      "rate_target": 0.05,
+      "cv": 2.2209568468120375,
+      "n_streams": 64,
+      "n_events_per_stream": 10000,
+      "n_messages": 1012082,
+      "n_dropped": 0,
+      "drop_pct": 0.0,
+      "p50_delay": 15.0,
+      "p95_delay": 42.050434149001006,
+      "mean_wait": 5.213138019704374,
+      "total_hops": 3484922,
+      "peak_occ": 18,
+      "port_capacity": 1024,
+      "gen_build_s": 35.46660780000093,
+      "sim_s": 17.22423430001072
+    },
+    {
+      "family": "hawkes",
+      "params": {
+        "branching": 0.7
+      },
+      "rate_measured": 0.050041867424350794,
+      "rate_target": 0.05,
+      "cv": 1.9011078049099932,
+      "n_streams": 64,
+      "n_events_per_stream": 10000,
+      "n_messages": 1012082,
+      "n_dropped": 0,
+      "drop_pct": 0.0,
+      "p50_delay": 15.0,
+      "p95_delay": 46.38844977689148,
+      "mean_wait": 5.921650198561612,
+      "total_hops": 3484922,
+      "peak_occ": 39,
+      "port_capacity": 1024,
+      "gen_build_s": 37.76838520000456,
+      "sim_s": 17.257793799988576
+    },
+    {
+      "family": "lrd",
+      "params": {
+        "hurst": 0.6
+      },
+      "rate_measured": 0.05002686404276598,
+      "rate_target": 0.05,
+      "cv": 2.1361137966555437,
+      "n_streams": 64,
+      "n_events_per_stream": 10000,
+      "n_messages": 994929,
+      "n_dropped": 0,
+      "drop_pct": 0.0,
+      "p50_delay": 18.0,
+      "p95_delay": 80.12297001909174,
+      "mean_wait": 18.071385634290813,
+      "total_hops": 3429165,
+      "peak_occ": 576,
+      "port_capacity": 1024,
+      "gen_build_s": 39.06021700000565,
+      "sim_s": 18.205115699995076
+    }
+  ]
+}
